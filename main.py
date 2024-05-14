@@ -14,6 +14,7 @@ app = Flask(__name__)
 def agriaid_model(image):
     model = tf.keras.models.load_model("1.keras")
     image = tf.keras.preprocessing.image.load_img(image, target_size=(256,256))
+    image =  image / 255.0
     img_array = tf.keras.preprocessing.image.img_to_array(image)
     img_array = tf.expand_dims(img_array, 0) # create a batch
     
