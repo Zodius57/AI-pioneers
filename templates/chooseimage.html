@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSickToolkit</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+
+</head>
+
+<body class="mainbody">
+
+    <header class="mainheader">
+
+        <div class="logo">
+            <img src="/static/logoN.png">
+        </div>
+
+        <h1>Agri-Aid</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tutorial">Tutorial</a></li>
+                <li><a href="/chooseimage">Upload Image</a></li>
+                <li><a href="/news">News Feed</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <h1>Upload Image</h1>
+    <form action="{{ url_for('upload_image') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <button type="submit">Run Diagnostic</button>
+    </form>
+    <div class="chooseimage">
+        {% if image %}
+        <img src="{{ image }}" alt="Uploaded Image">
+        {% endif %}
+    </div>
+
+
+    <p>Result: {{ result }}</p>
+
+
+    <p>Message: {{ message }}</p>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
