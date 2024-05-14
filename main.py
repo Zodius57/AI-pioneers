@@ -23,7 +23,18 @@ def agriaid_model(image):
  'Mango Powdery Mildew',
  'Tomato Bacterial spot',
  'Tomato Leaf Mold',
- 'Tomato healthy']
+ 'Tomato healthy',
+ 'Black Spot',
+ 'Canker',
+ 'Early Blight',
+ 'Greening',
+ 'Healthy',
+ 'Late Blight',
+ 'Melanose',
+ 'Pepper, bell healthy',
+ 'Pepper, bell Bacterial spot',
+ 'Tomato Early blight',
+ 'Tomato Late blight',]
     return str(class_names[np.argmax(prediction)])
 
 
