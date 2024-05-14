@@ -1,0 +1,173 @@
+
+header {
+    background-image: url("firstback.png");
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.mainheader {
+    background-image: url("head.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #234F1E;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.mainbody{
+    background-image: url("back.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: #234F1E;
+    font-size: xx-large;
+
+}
+
+.first {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("happy.jpeg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.About{
+    text-align: center;
+    background: transparent;
+    padding: 50px;
+
+}
+.About img{
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding-right: 10px;
+    border-radius: 50%;
+
+}
+
+.About .info{
+    text-align: center;
+    font-size: x-large;
+    color: #fff;
+    padding: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+
+
+
+
+}
+.logo img{
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+h1{
+    font-family: "Comic Sans MS";
+    padding: 30px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ td {
+     border: transparent;
+     padding: 8px;
+     text-align: left;
+     font-size: x-large;
+     color: #234F1E;
+}
+
+ tr:hover{
+     background-color: lightgoldenrodyellow;
+ }
+ a{
+     text-decoration: none;
+     color: #234F1E;
+
+ }
+ table tr{
+     justify-content: center;
+     padding: 30px;
+
+ }
+
+
+
+.step1{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+.step1\.5{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+.step2{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    height: 250px;
+    width: 250px;
+}
+p{
+    font-size: xx-large;
+    font-family: "New Peninim MT", serif;
+    display: block;
+    color: #234F1E;
+}
+button{
+    height: 50px;
+    width: 150px;
+    background-color: darkgrey;
+    color: white;
+    font-family: AppleGothic, serif;
+    font-size: large;
+
+}
+
+button:hover {
+    background-color: #3A7734;
+}
+
+
+form {
+    margin-bottom: 20px;
+    justify-content: center;
+}
