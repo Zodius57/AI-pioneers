@@ -15,6 +15,9 @@ header {
     color: #234F1E;
     text-align: center;
     font-size: x-large;
+    padding-left: 0px;
+    padding-right: 0px;
+
 
 }
 
@@ -24,6 +27,12 @@ header {
     background-size: cover;
     text-align: center;
 
+
+}
+.content{
+    padding-left: 200px;
+    padding-right: 250px;
+    justify-content: center;
 }
 
 
@@ -102,7 +111,7 @@ table {
 
  td {
      border: transparent;
-     padding: 8px;
+     padding: 30px;
      text-align: left;
      font-size: x-large;
      color: #234F1E;
@@ -111,6 +120,7 @@ table {
  tr:hover{
      background-color: lightgoldenrodyellow;
  }
+
  a{
      text-decoration: none;
      color: #234F1E;
@@ -171,3 +181,38 @@ form {
     margin-bottom: 20px;
     justify-content: center;
 }
+
+.dropbtn{
+    float: right;
+    width: 100px;
+    background-color: #b8d8be;
+
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(184, 216, 190, 0.5);
+    padding-top: 350px;
+    text-align: center;
+    z-index: 1;
+    font-size: xx-large;
+
+}
+
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #234F1E;
+    display: block;
+    
+}
+
+
