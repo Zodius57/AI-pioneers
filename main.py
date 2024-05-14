@@ -5,6 +5,10 @@ import tensorflow as tf
 import numpy as np
 # import pyttsx3
 # from pyttsx3 import engine
+
+with open('treatment.sql', 'r') as sql_file:
+    sql_script = sql_file.read()
+
 app = Flask(__name__)
 
 def agriaid_model(image):
@@ -56,9 +60,17 @@ def upload_image():
             # Save the uploaded image to a folder (e.g., 'uploads')
             path = 'static/uploads/' + image.filename
             image.save(path)
-            message = "Treatment"
 
             result = agriaid_model(path)
+
+            db = sqlite3.connect('treatment.db')
+            cursor = db.cursor()
+            cursor.executescript(sql_script)
+            db.commit()
+            cursor.execute("SELECT * FROM treatments WHERE plantType = :plantType", {'plantType': result})
+            db.commit()
+            message = cursor.fetchone()[1]
+            db.close()
 
             # Return the URL of the uploaded image to display on the page
             return render_template('chooseimage.html', image=url_for('static', filename='uploads/' + image.filename), message=message, result=result )
@@ -68,5 +80,4 @@ def upload_image():
         return render_template('chooseimage.html', image=None)
 
 if __name__ == '__main__':
-    db.init_app(app)
     app.run(debug=True)

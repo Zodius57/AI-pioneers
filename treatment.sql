@@ -1,4 +1,6 @@
-CREATE TABLE IF NOT EXISTS  treatments(
+DROP TABLE IF EXISTS treatments;
+
+CREATE TABLE treatments(
           plantType text,
           treatmentMethod text );
         
