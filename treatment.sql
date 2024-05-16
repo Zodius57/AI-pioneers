@@ -17,7 +17,7 @@ INSERT INTO treatments VALUES ('Canker', 'Canker Citrus', 'With regards to treat
 INSERT INTO treatments VALUES ('Early_Blight', 'Early Blight citrus', 'Early intervention is critical, so act quickly as soon as there are signs of Blight. Remove and destroy any infected parts of the plant, do not place into your compost. Spray with Yates liquid Copper as soon as symptoms appear.');
 INSERT INTO treatments VALUES ('Greening', 'Greening Citrus', 'Citrus greening is spread by an insect called a psyllid. Applying neem oil, a botanical oil available at garden centers, will smother the eggs of the psyllid to help control the population.');
 INSERT INTO treatments VALUES ('Healthy', 'Healthy Citrus', 'Tree seems to be healthy');
-INSERT INTO treatments VALUES ('Late Blight', 'Late Blight Citrus', 'Spraying fungicides is the most effective way to prevent late blight.');
+INSERT INTO treatments VALUES ('Late_Blight', 'Late Blight Citrus', 'Spraying fungicides is the most effective way to prevent late blight.');
 INSERT INTO treatments VALUES ('Melanose', 'Melanose Citrus', 'Protectant copper sprays are the only product registered for melanose control. timing of spray applications is very important.');
 INSERT INTO treatments VALUES ('Pepper,_bell___Bacterial_spot', 'Bacterial Spot Bell Pepper', 'Copper-based fungicides can help control bacterial spot. Follow the instructions on the product label carefully for the application rate and frequency.');
 INSERT INTO treatments VALUES ('Pepper,_bell___healthy', 'Healthy Bell Pepper', 'Plant is healthy');
